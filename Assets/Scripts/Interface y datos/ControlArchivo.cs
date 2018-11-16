@@ -6,8 +6,8 @@ using System;
 
 public class ControlArchivo : MonoBehaviour
 {
-	public static string rutaTxt = @"C:\Users\Carlos\Desktop\ProgresoExe\progreso.txt";
-	public static string rutaJson = @"C:\Users\Carlos\Desktop\ProgresoExe\Progreso.json";
+	public static string rutaTxt = @"C:\Users\carlos\Desktop\Unity\Proyectos\JuegoMac\Progreso\progreso.txt";
+	public static string rutaJson = @"C:\Users\carlos\Desktop\Unity\Proyectos\JuegoMac\Progreso\Progreso.json";
 
 	static string cadenaJson;
 

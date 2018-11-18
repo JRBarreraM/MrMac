@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class keyCheckerScript : MonoBehaviour 
 {
-	public string[] Respuestas;
+	public string[] RespuestasRetos;
+	public string[] RespuestasBosses;
 	[SerializeField]
 	private InputField input;
 	public void GetInput(string code)
@@ -14,12 +15,13 @@ public class keyCheckerScript : MonoBehaviour
 		{
 			//no estoy claro
 		}
-		for (int i = 0; i < Respuestas.Length; i++)
+		for (int i = 0; i < RespuestasRetos.Length; i++)
 		{
-			if (code.Equals(Respuestas[i]))
+			if (code.Equals(RespuestasRetos[i]))
 			{
-				Respuestas [i] = "";
+				RespuestasRetos [i] = "";
 				Debug.Log ("Correcto");
+				FindObjectOfType<AudioManager>().Play ("NormalCorrect");
 				//Aqui Carlos Aumenta la Barra de hackeo
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";

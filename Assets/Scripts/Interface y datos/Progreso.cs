@@ -36,6 +36,7 @@ public class Progreso : MonoBehaviour
 															  barraProgreso.rectTransform.localScale.z);
 
 		GuardarProgreso ();
+		Debug.Log ("Progreso guardado");
 	}
 
 	float CalcularPorcentaje(float maximo, float actual)
@@ -48,7 +49,7 @@ public class Progreso : MonoBehaviour
 
 	void GuardarProgreso()
 	{
-		ControlArchivo.ActualizarProgreso (CalcularPorcentaje (tamañoBarraMaximo,escala).ToString());	
+		ControlArchivo.ActualizarProgreso (CalcularPorcentaje (tamañoBarraMaximo,escala).ToString());
 	}
 		
 }

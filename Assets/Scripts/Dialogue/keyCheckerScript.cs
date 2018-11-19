@@ -9,6 +9,13 @@ public class keyCheckerScript : MonoBehaviour
 	public string[] RespuestasBosses;
 	[SerializeField]
 	private InputField input;
+	private GameObject dataController; 
+
+	void Awake()
+	{
+		dataController = GameObject.Find("DataController"); 
+	}
+
 	public void GetInput(string code)
 	{
 		if (code.Equals ("shame"))
@@ -22,7 +29,7 @@ public class keyCheckerScript : MonoBehaviour
 				RespuestasRetos [i] = "";
 				Debug.Log ("Correcto");
 				FindObjectOfType<AudioManager>().Play ("NormalCorrect");
-				//Aqui Carlos Aumenta la Barra de hackeo
+				dataController.SendMessage ("ActualizarProgreso");
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
 				return;

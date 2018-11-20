@@ -14,6 +14,7 @@ public class WordSpawn : MonoBehaviour {
 
 	void Inst()
 	{
-		GameObject nextWord = (GameObject)Instantiate(word,canv.transform);
+		GameObject nextWord = (GameObject)Instantiate(word);
+		nextWord.transform.SetParent (canv.transform,false);
 	}
 }

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class WordBehavior : MonoBehaviour {
 
-	// Use this for initialization
+	public float offset = 5f;
+	public float maxHeight = 5f;
+	public float maxWidth = 8.65f; 
+
 	void Start () {
-		
+
+		Vector3 ranPos = new Vector3(Random.Range(-(maxWidth - offset),maxWidth - offset),Random.Range(-(maxHeight - offset),maxHeight - offset),0f);
+		transform.position = ranPos;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}

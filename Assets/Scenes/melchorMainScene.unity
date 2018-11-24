@@ -141,7 +141,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespuestasRetos:
-  - hola
+  - samesmail
+  - 404
+  - Flipper
+  - kali
+  - gnome
+  - allsafe
+  - kde
+  - hellofriend
+  - DDoS
+  - 3xploit
+  - krista
+  - init 1
+  - h4ndshake
+  - krista
+  - phillip
+  - shutdown
+  - shayla
+  - mobley
+  - ollie
+  - morphine
+  - joanna
+  - cisco
+  - honeypot
+  - morphine
+  - morphine
   RespuestasBosses: []
   Maquinas: []
   Puertas: []

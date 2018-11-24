@@ -164,10 +164,18 @@ MonoBehaviour:
   - joanna
   - cisco
   - honeypot
-  - morphine
-  - morphine
-  RespuestasBosses: []
-  Maquinas: []
+  - shutup
+  - m3tadata
+  - stage3
+  RespuestasBosses:
+  - d3bug
+  - k3rnelp4nic
+  - wh1ter0se
+  Maquinas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Puertas: []
   input: {fileID: 1702644751}
 --- !u!224 &2220769

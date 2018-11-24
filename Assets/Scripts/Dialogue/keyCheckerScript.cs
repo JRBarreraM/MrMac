@@ -11,7 +11,8 @@ public class keyCheckerScript : MonoBehaviour
 	public GameObject[] Puertas;
 	[SerializeField]
 	private InputField input;
-	private GameObject dataController; 
+	private GameObject dataController;
+	public AudioManager aM;
 
 	void Awake()
 	{
@@ -26,14 +27,35 @@ public class keyCheckerScript : MonoBehaviour
 			{
 				RespuestasRetos [i] = "1er1g16g156eg16vdv1";
 				Debug.Log ("Correcto");
-				FindObjectOfType<AudioManager>().Play ("NormalCorrect");
+				aM.Play ("NormalCorrect");
 				dataController.SendMessage ("ActualizarProgreso");
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
+				StartCoroutine(ExecuteAfterTime(4));
+				return;
+			}
+		}
+
+		for (int i = 0; i < RespuestasBosses.Length; i++)
+		{
+			if (code.Equals(RespuestasBosses[i]))
+			{
+				RespuestasBosses [i] = "1er1g16g156eg16vdv1";
+				Debug.Log ("Correcto");
+				aM.Play ("NormalCorrect");
+				dataController.SendMessage ("ActualizarProgreso");
+				//Aqui se manda el mensaje para cambiar de color la pantalla
+				input.text = "";
+				StartCoroutine(ExecuteAfterTime(10));
 				return;
 			}
 		}
 		Debug.Log ("Incorrecto");
 		return;
+	}
+	IEnumerator ExecuteAfterTime(float time)
+	{
+		yield return new WaitForSeconds (time);
+		aM.Stop ("NormalCorrect");
 	}
 }

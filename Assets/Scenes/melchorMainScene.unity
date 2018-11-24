@@ -178,6 +178,7 @@ MonoBehaviour:
   - {fileID: 0}
   Puertas: []
   input: {fileID: 1702644751}
+  aM: {fileID: 1876141900}
 --- !u!224 &2220769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2640,8 +2641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45a3dcbab9d34045a9aa81192452306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoInicial: 120
-  tiempoTension: 5
+  tiempoInicial: 240
+  tiempoTension: 120
   colorInicial: {r: 0.07058824, g: 0.80392164, b: 0.909804, a: 1}
   colorTension: {r: 0.85098046, g: 0.07450981, b: 0.6392157, a: 1}
   contador: {fileID: 1567005746}
@@ -2656,9 +2657,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143aec5c836a9884b80a3f75d1037273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidadNiveles: 5
+  cantidadNiveles: 30
   "tama\xF1oBarraMinimo": 0
-  "tama\xF1oBarraMaximo": 2
+  "tama\xF1oBarraMaximo": 35
   barraProgreso: {fileID: 660962706}
 --- !u!114 &485856383
 MonoBehaviour:
@@ -5972,10 +5973,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: NormalCorrect
-    clip: {fileID: 8300000, guid: 7443a8f3706b9924c8eacd5174707a4d, type: 3}
+    clip: {fileID: 8300000, guid: 652dc410f3b57ef43a02a92a94888376, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &1876141901
 Transform:

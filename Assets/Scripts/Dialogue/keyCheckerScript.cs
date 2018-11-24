@@ -56,6 +56,6 @@ public class keyCheckerScript : MonoBehaviour
 	IEnumerator ExecuteAfterTime(float time)
 	{
 		yield return new WaitForSeconds (time);
-		aM.Stop ("NormalCorrect");
+		aM.Pause ("NormalCorrect");
 	}
 }

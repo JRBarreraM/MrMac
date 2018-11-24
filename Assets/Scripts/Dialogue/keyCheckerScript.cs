@@ -56,7 +56,9 @@ public class keyCheckerScript : MonoBehaviour
 	}
 	IEnumerator ExecuteAfterTime(float time)
 	{
+		Debug.Log ("Pausa");
 		yield return new WaitForSeconds (time);
+		Debug.Log ("Wait");
 		aM.Pause ("NormalCorrect");
 	}
 }

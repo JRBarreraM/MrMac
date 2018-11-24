@@ -108,6 +108,7 @@
      <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Dialogue\keyCheckerScript.cs" />
      <Compile Include="Assets\Scripts\Game\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Game\tutorialManager.cs" />
      <Compile Include="Assets\Scripts\Interface y datos\Activador.cs" />
      <Compile Include="Assets\Scripts\Interface y datos\ControlArchivo.cs" />
      <Compile Include="Assets\Scripts\Interface y datos\NombreGrupo.cs" />

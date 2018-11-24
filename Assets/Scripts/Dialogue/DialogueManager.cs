@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
 			dBox.SetActive (false);
 			tBox.SetActive (false);
 			dBoxActive = false;
+			GameObject.Find ("Player").GetComponent<Animator> ().enabled = true;
+			GameObject.Find ("Player").GetComponent<Movement> ().enabled = true;
 		}
 	}
 

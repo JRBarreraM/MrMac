@@ -391,3 +391,5 @@ C:\Users\joseb\Documents\GitHub\MrMac\Temp\bin\Debug\UnityEngine.SpatialTracking
 C:\Users\joseb\Documents\GitHub\MrMac\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\joseb\Documents\GitHub\MrMac\obj\Debug\Assembly-CSharp.dll
 C:\Users\joseb\Documents\GitHub\MrMac\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Oan\Documents\GitHub\MrMac\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Oan\Documents\GitHub\MrMac\obj\Debug\Assembly-CSharp.dll

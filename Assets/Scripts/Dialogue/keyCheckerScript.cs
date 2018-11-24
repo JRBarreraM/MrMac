@@ -27,6 +27,8 @@ public class keyCheckerScript : MonoBehaviour
 				Debug.Log ("Correcto");
 				aM.Play ("NormalCorrect");
 				dataController.SendMessage ("ActualizarProgreso");
+				Maquinas [i].transform.GetChild(0).gameObject.SetActive (false);
+				Maquinas [i].GetComponent<Animator> ().enabled = true;
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
 				StartCoroutine (ExecuteAfterTime (4));
@@ -42,6 +44,7 @@ public class keyCheckerScript : MonoBehaviour
 				dataController.SendMessage ("ActualizarProgreso");
 				Puertas [i].GetComponent<Animator> ().enabled = true;
 				Puertas [i].GetComponent<BoxCollider2D> ().enabled = false;
+				Puertas [i].transform.GetChild(0).gameObject.SetActive (false);
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
 				StartCoroutine (ExecuteAfterTime (10));

@@ -21,38 +21,35 @@ public class keyCheckerScript : MonoBehaviour
 
 	public void GetInput(string code)
 	{
-		for (int i = 0; i < RespuestasRetos.Length; i++)
-		{
-			if (code.Equals(RespuestasRetos[i]))
-			{
+		for (int i = 0; i < RespuestasRetos.Length; i++) {
+			if (code.Equals (RespuestasRetos [i])) {
 				RespuestasRetos [i] = "1er1g16g156eg16vdv1";
 				Debug.Log ("Correcto");
 				aM.Play ("NormalCorrect");
 				dataController.SendMessage ("ActualizarProgreso");
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
-				StartCoroutine(ExecuteAfterTime(4));
+				StartCoroutine (ExecuteAfterTime (4));
 				return;
 			}
 		}
 
-		for (int i = 0; i < RespuestasBosses.Length; i++)
-		{
-			if (code.Equals(RespuestasBosses[i]))
-			{
+		for (int i = 0; i < RespuestasBosses.Length; i++) {
+			if (code.Equals (RespuestasBosses [i])) {
 				RespuestasBosses [i] = "1er1g16g156eg16vdv1";
 				Debug.Log ("Correcto");
 				aM.Play ("NormalCorrect");
 				dataController.SendMessage ("ActualizarProgreso");
-				Puertas [i].GetComponent<Animator>().Play ("puertaAnimation");
+				Puertas [i].GetComponent<Animator> ().enabled = true;
+				Puertas [i].GetComponent<BoxCollider2D> ().enabled = false;
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
-				StartCoroutine(ExecuteAfterTime(10));
+				StartCoroutine (ExecuteAfterTime (10));
 				return;
 			}
+			Debug.Log ("Incorrecto");
+			return;
 		}
-		Debug.Log ("Incorrecto");
-		return;
 	}
 	IEnumerator ExecuteAfterTime(float time)
 	{

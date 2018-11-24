@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DialogueHolder : MonoBehaviour 
 {
-	public string dialogue;
 	private DialogueManager dManager;
+	public string[] dialogueLines;
 
 	// Use this for initialization
 	void Start () 
@@ -19,9 +19,14 @@ public class DialogueHolder : MonoBehaviour
 		{
 			if (Input.GetKeyUp(KeyCode.Return))
 			{
-				dManager.showBox(dialogue);
-				GameObject.Find ("Player").GetComponent<Movement> ().enabled = false;
-				GameObject.Find ("Player").GetComponent<Animator> ().enabled = false;
+				if (!(dManager.dBoxActive))
+				{
+					dManager.dialogLines = dialogueLines;
+					dManager.currentLine = 0;
+					dManager.showDialogue ();
+					GameObject.Find ("Player").GetComponent<Movement> ().enabled = false;
+					GameObject.Find ("Player").GetComponent<Animator> ().enabled = false;
+				}
 			}
 		}
 	}

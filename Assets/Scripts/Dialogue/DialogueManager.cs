@@ -10,7 +10,11 @@ public class DialogueManager : MonoBehaviour
 	public Text dText;
 	public bool dBoxActive;
 	public bool tBoxActive;
-
+/// <summary>
+/// ////////////////////////////
+/// </summary>
+	public string[] dialogLines;
+	public int currentLine;
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,13 +27,20 @@ public class DialogueManager : MonoBehaviour
 	{
 		if (dBoxActive &&  tBoxActive && Input.GetKeyDown (KeyCode.Return))
 		{
+			currentLine++;
+		}
+
+		if (currentLine >= dialogLines.Length)
+		{
 			dBox.SetActive (false);
 			tBox.SetActive (false);
 			dBoxActive = false;
 			tBoxActive = false;
 			GameObject.Find ("Player").GetComponent<Animator> ().enabled = true;
 			GameObject.Find ("Player").GetComponent<Movement> ().enabled = true;
+			currentLine = 0;
 		}
+		dText.text = dialogLines [currentLine];
 	}
 
 	public void showBox(string dialogue)
@@ -40,4 +51,13 @@ public class DialogueManager : MonoBehaviour
 		tBoxActive = true;
 		dText.text = dialogue;
 	}
+
+	public void showDialogue()
+	{
+		dBox.SetActive (true);
+		tBox.SetActive (true);
+		dBoxActive = true;
+		tBoxActive = true;
+	}
+
 }

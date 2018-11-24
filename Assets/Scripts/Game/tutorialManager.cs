@@ -6,7 +6,7 @@ public class tutorialManager : MonoBehaviour {
 	public GameObject[] popUps;
 	private int popUpIndex=0;
 	
-	void FixedUpdate ()
+	void Update ()
 	{
 		if (popUpIndex == 0) 
 		{
@@ -14,7 +14,12 @@ public class tutorialManager : MonoBehaviour {
 			if ((Input.GetKeyDown (KeyCode.LeftArrow)) ||
 			    (Input.GetKeyDown (KeyCode.RightArrow)) ||
 			    (Input.GetKeyDown (KeyCode.UpArrow)) ||
-			    (Input.GetKeyDown (KeyCode.DownArrow)))
+				(Input.GetKeyDown (KeyCode.UpArrow)) ||
+				(Input.GetKeyDown (KeyCode.DownArrow)) ||
+				(Input.GetKeyDown (KeyCode.D)) ||
+				(Input.GetKeyDown (KeyCode.S)) ||
+				(Input.GetKeyDown (KeyCode.A)) ||
+				(Input.GetKeyDown (KeyCode.W)))
 			{
 				popUps [popUpIndex].SetActive (false);
 				popUpIndex++;

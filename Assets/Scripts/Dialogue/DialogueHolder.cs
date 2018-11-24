@@ -22,7 +22,6 @@ public class DialogueHolder : MonoBehaviour
 				dManager.showBox(dialogue);
 				GameObject.Find ("Player").GetComponent<Movement> ().enabled = false;
 				GameObject.Find ("Player").GetComponent<Animator> ().enabled = false;
-
 			}
 		}
 	}

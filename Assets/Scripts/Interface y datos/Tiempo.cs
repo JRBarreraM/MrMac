@@ -91,6 +91,12 @@ public class Tiempo : MonoBehaviour {
 
 		if (tiempoActual == 0)
 		{
+			GameObject[] Puertas = GameObject.Find ("TerminalController").GetComponent<keyCheckerScript>().Puertas;
+			for (int i = 0; i < Puertas.Length; i++)
+			{
+				Puertas [i].GetComponent<Animator> ().enabled = true;
+				Puertas [i].GetComponent<BoxCollider2D> ().enabled = false;
+			}
 			CancelInvoke ();
 		}
 	}

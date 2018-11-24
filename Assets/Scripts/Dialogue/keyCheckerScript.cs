@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class keyCheckerScript : MonoBehaviour 
 {
@@ -21,6 +22,7 @@ public class keyCheckerScript : MonoBehaviour
 
 	public void GetInput(string code)
 	{
+
 		for (int i = 0; i < RespuestasRetos.Length; i++) {
 			if (code.Equals (RespuestasRetos [i])) {
 				RespuestasRetos [i] = "1er1g16g156eg16vdv1";
@@ -53,8 +55,12 @@ public class keyCheckerScript : MonoBehaviour
 				}
 				return;
 			}
-			Debug.Log ("Incorrecto");
-			return;
+		if (code.Equals("t3rm1n4l"))
+		{
+			SceneManager.LoadScene("Start");
+		}
+		Debug.Log ("Incorrecto");
+		return;
 		}
 	}
 

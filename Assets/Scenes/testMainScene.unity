@@ -437,6 +437,8 @@ MonoBehaviour:
   - Realmente no crei que lo lograrias
   - Creo que estas listo para esto
   - Nos vemos en la terminal
+  - Escribe t3rm1n4l cuando estes listo
+  caller: FinalPC
 --- !u!1 &330313480
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Hola Bicho
+  caller: 
 --- !u!61 &330440821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6454,6 +6457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  caller: 
 --- !u!61 &1447856595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6885,6 +6889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  caller: 
 --- !u!61 &1704888959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7460,6 +7465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  caller: 
 --- !u!61 &2026152141
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -40,7 +40,9 @@ public class DialogueManager : MonoBehaviour
 			GameObject.Find ("Player").GetComponent<Movement> ().enabled = true;
 			currentLine = 0;
 		}
-		dText.text = dialogLines [currentLine];
+		if (currentLine < dialogLines.Length) {
+			dText.text = dialogLines [currentLine];
+		}
 	}
 
 	public void showBox(string dialogue)
@@ -58,6 +60,6 @@ public class DialogueManager : MonoBehaviour
 		tBox.SetActive (true);
 		dBoxActive = true;
 		tBoxActive = true;
+		currentLine = 0;
 	}
-
 }

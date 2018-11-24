@@ -30,19 +30,19 @@ AnimationClip:
       value: {fileID: 21300000, guid: c8ae79ba15c0b4748ba8494d669b4382, type: 3}
     - time: 0.2
       value: {fileID: 21300000, guid: bd696f6eb4325534b84b4ebbe22d9d13, type: 3}
-    - time: 0.24
+    - time: 0.24000001
       value: {fileID: 21300000, guid: bd42f5b7894ae9b45a2851eb984308e6, type: 3}
     - time: 0.28
       value: {fileID: 21300000, guid: 19f22a89fe7631d4f8190befde2db1f4, type: 3}
     - time: 0.32
       value: {fileID: 21300000, guid: 739ed4abb2986604bb6dbe06ab916b57, type: 3}
-    - time: 0.36
+    - time: 0.35999998
       value: {fileID: 21300000, guid: aa5ee5d7f5a6822479a5b55664c775bf, type: 3}
-    - time: 0.4
+    - time: 0.39999998
       value: {fileID: 21300000, guid: 21999d111a1112b478f6be685cbd9b3b, type: 3}
-    - time: 0.44
+    - time: 0.43999997
       value: {fileID: 21300000, guid: 15d2b744654b20d489d1f41c9f4ddb3b, type: 3}
-    - time: 0.48
+    - time: 0.47999996
       value: {fileID: 21300000, guid: ee4bcf3ea25a3ac4f8714bf44cc6dc14, type: 3}
     attribute: m_Sprite
     path: 

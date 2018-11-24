@@ -118,7 +118,6 @@
      <Compile Include="Assets\Scripts\Sound\Sound.cs" />
      <Compile Include="Assets\Scripts\StartMenu\WordBehavior.cs" />
      <Compile Include="Assets\Scripts\StartMenu\WordSpawn.cs" />
-     <Compile Include="Assets\tutorialManager.cs" />
      <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>

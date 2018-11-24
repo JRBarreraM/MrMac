@@ -44,6 +44,7 @@ public class keyCheckerScript : MonoBehaviour
 				Debug.Log ("Correcto");
 				aM.Play ("NormalCorrect");
 				dataController.SendMessage ("ActualizarProgreso");
+				Puertas [i].GetComponent<Animator>().Play ("puertaAnimation");
 				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
 				StartCoroutine(ExecuteAfterTime(10));

@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WordBehavior : MonoBehaviour {
 
-	public float offset = 5f;
-	public float maxHeight = 5f;
-	public float maxWidth = 8.65f; 
+	public float minScale = 5f;
+	public float maxScale = 20f;
+	public float padding = 100f;
 
 	void Start () {
-
-		Vector3 ranPos = new Vector3(Random.Range(-(maxWidth - offset),maxWidth - offset),Random.Range(-(maxHeight - offset),maxHeight - offset),0f);
+		Vector3 ranPos = new Vector3(Random.Range(0f + padding,Screen.width - padding),
+									 Random.Range(0f + padding,Screen.height - padding),0f);
 		transform.position = ranPos;
-	}
 
-	void Update () {
-		
+		Text txt = GetComponent <Text>();
+		txt.fontSize = Mathf.RoundToInt(Random.Range (minScale, maxScale));
+		txt.text = Palabra.SetWord ();
 	}
 }

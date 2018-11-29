@@ -6,15 +6,16 @@ public class WordSpawn : MonoBehaviour {
 
 	public GameObject word;
 	public GameObject canv;
+	public float wordTime = 0.5f;
 
 	void Start () 
 	{
-		InvokeRepeating ("Inst", 0f, 0.25f);
+		InvokeRepeating ("Inst", wordTime, wordTime);
 	}
 
 	void Inst()
 	{
-		GameObject nextWord = (GameObject)Instantiate(word);
-		nextWord.transform.SetParent (canv.transform,false);
+		GameObject nextWord1 = (GameObject)Instantiate(word);
+		nextWord1.transform.SetParent (canv.transform,true);
 	}
 }

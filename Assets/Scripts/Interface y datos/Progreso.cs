@@ -10,6 +10,7 @@ public class Progreso : MonoBehaviour
 	public float tamañoBarraMinimo = 0f;
 	public float tamañoBarraMaximo = 2f;
 	public RawImage barraProgreso;
+	public Text contador;
 
 	private float progresoPorNivel = 0f;
 	private float escala = 0f;
@@ -34,6 +35,8 @@ public class Progreso : MonoBehaviour
 		barraProgreso.rectTransform.localScale = new Vector3 (escala,
 															  barraProgreso.rectTransform.localScale.y,
 															  barraProgreso.rectTransform.localScale.z);
+
+		contador.text = CalcularPorcentaje (tamañoBarraMaximo,escala).ToString() + "%";
 
 		GuardarProgreso ();
 		Debug.Log ("Progreso guardado");

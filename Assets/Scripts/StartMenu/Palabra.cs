@@ -5,7 +5,8 @@ using System.IO;
 
 public class Palabra : MonoBehaviour {
 
-	private static string rutaBash = Application.dataPath + "/IntroBash/bash.txt";
+	//private static string rutaBash = Application.dataPath + "/IntroBash/bash.txt";
+	private static string rutaBash = @"/home/invitado/Documents/Safford/bb.txt";
 
 	public static string SetWord() 
 	{

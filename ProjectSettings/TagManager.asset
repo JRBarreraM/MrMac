@@ -44,9 +44,27 @@ TagManager:
   - name: Suelo
     uniqueID: 1819368717
     locked: 0
+  - name: SobreSuelo
+    uniqueID: 1672514025
+    locked: 0
   - name: Paredes
     uniqueID: 2242752643
     locked: 0
+  - name: Muebles
+    uniqueID: 911164311
+    locked: 0
+  - name: SobreMuebles
+    uniqueID: 541705741
+    locked: 0
   - name: Player
     uniqueID: 4054364401
+    locked: 0
+  - name: Sobreplayer
+    uniqueID: 3336484155
+    locked: 0
+  - name: GUI
+    uniqueID: 1256864663
+    locked: 0
+  - name: Titulo
+    uniqueID: 129670299
     locked: 0

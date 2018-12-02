@@ -18,4 +18,9 @@ public class WordSpawn : MonoBehaviour {
 		GameObject nextWord1 = (GameObject)Instantiate(word);
 		nextWord1.transform.SetParent (canv.transform,true);
 	}
+
+	public void StopAnimation()
+	{
+		CancelInvoke ();
+	}
 }

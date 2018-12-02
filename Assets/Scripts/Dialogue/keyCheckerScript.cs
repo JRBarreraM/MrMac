@@ -8,6 +8,7 @@ public class keyCheckerScript : MonoBehaviour
 {
 	public string[] RespuestasRetos;
 	public string[] RespuestasBosses;
+	public string[] RespuestasRetosMaricos;
 	public GameObject[] Maquinas;
 	public GameObject[] Puertas;
 	[SerializeField]
@@ -18,6 +19,7 @@ public class keyCheckerScript : MonoBehaviour
 	void Awake()
 	{
 		dataController = GameObject.Find("DataController");
+//		aM.Stop ("NormalCorrect");
 	}
 
 	public void GetInput(string code)
@@ -31,7 +33,6 @@ public class keyCheckerScript : MonoBehaviour
 				dataController.SendMessage ("ActualizarProgreso");
 				Maquinas [i].transform.GetChild (0).gameObject.SetActive (false);
 				Maquinas [i].GetComponent<Animator> ().enabled = true;
-				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
 				StartCoroutine (ExecuteAfterTime (4));
 				return;
@@ -47,21 +48,32 @@ public class keyCheckerScript : MonoBehaviour
 				Puertas [i].GetComponent<Animator> ().enabled = true;
 				Puertas [i].GetComponent<BoxCollider2D> ().enabled = false;
 				Puertas [i].transform.GetChild (0).gameObject.SetActive (false);
-				//Aqui se manda el mensaje para cambiar de color la pantalla
 				input.text = "";
-				if (!(code.Equals ("wh1ter0se")))
-				{
+				if (!(code.Equals ("3xploit"))) {
 					StartCoroutine (ExecuteAfterTime (10));
 				}
 				return;
 			}
-		if (code.Equals("t3rm1n4l"))
+		}
+
+		for (int i = 0; i < RespuestasRetosMaricos.Length; i++) {
+			if (code.Equals (RespuestasRetosMaricos [i])) {
+				RespuestasRetosMaricos [i] = "1er1g16g156eg16vdv1";
+				aM.Play ("NormalCorrect");
+				Debug.Log ("Correcto");
+				input.text = "";
+				return;
+			}
+		}
+
+		if (code.Equals("wh1ter0se"))
 		{
 			SceneManager.LoadScene("Start");
 		}
 		Debug.Log ("Incorrecto");
+		aM.Play ("InCorrect");
+		input.text = "";
 		return;
-		}
 	}
 
 	IEnumerator ExecuteAfterTime(float time)

@@ -10,12 +10,9 @@ public class DialogueManager : MonoBehaviour
 	public Text dText;
 	public bool dBoxActive;
 	public bool tBoxActive;
-/// <summary>
-/// ////////////////////////////
-/// </summary>
 	public string[] dialogLines;
 	public int currentLine;
-	// Use this for initialization
+
 	void Start () 
 	{
 		dBoxActive = true;
@@ -43,15 +40,6 @@ public class DialogueManager : MonoBehaviour
 		if (currentLine < dialogLines.Length) {
 			dText.text = dialogLines [currentLine];
 		}
-	}
-
-	public void showBox(string dialogue)
-	{
-		dBox.SetActive (true);
-		tBox.SetActive (true);
-		dBoxActive = true;
-		tBoxActive = true;
-		dText.text = dialogue;
 	}
 
 	public void showDialogue()

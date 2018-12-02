@@ -171,6 +171,7 @@ MonoBehaviour:
   - d3bug
   - k3rnelp4nic
   - wh1ter0se
+  RespuestasRetosMaricos: []
   Maquinas:
   - {fileID: 520441256}
   - {fileID: 2091038343}
@@ -438,6 +439,7 @@ MonoBehaviour:
   - Creo que estas listo para esto
   - Nos vemos en la terminal
   - Escribe t3rm1n4l cuando estes listo
+  dialogueLinesAlter: []
   caller: FinalPC
 --- !u!1 &330313480
 GameObject:
@@ -573,6 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Hola Bicho
+  dialogueLinesAlter: []
   caller: 
 --- !u!61 &330440821
 BoxCollider2D:
@@ -2954,6 +2957,7 @@ MonoBehaviour:
   "tama\xF1oBarraMinimo": 0
   "tama\xF1oBarraMaximo": 35
   barraProgreso: {fileID: 660962706}
+  contador: {fileID: 0}
 --- !u!114 &485856383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3102,7 +3106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 921c4e526393cb248b631ad3ec71ad11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3662,7 +3666,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 461d204f52cb6554f852924ef051ce92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3868,7 +3872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &921059117
 Animator:
   serializedVersion: 3
@@ -3963,7 +3967,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52870e327d5ad324e8881d3110c085a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4198,7 +4202,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
@@ -6457,6 +6461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  dialogueLinesAlter: []
   caller: 
 --- !u!61 &1447856595
 BoxCollider2D:
@@ -6889,6 +6894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  dialogueLinesAlter: []
   caller: 
 --- !u!61 &1704888959
 BoxCollider2D:
@@ -7007,7 +7013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1836326201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7085,7 +7091,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52870e327d5ad324e8881d3110c085a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7227,7 +7233,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -240602895
-  m_SortingLayer: 3
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f1a06a472944a024da4af0dbf40b9b19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7465,6 +7471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines: []
+  dialogueLinesAlter: []
   caller: 
 --- !u!61 &2026152141
 BoxCollider2D:
@@ -7588,7 +7595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2091038344
 Animator:
   serializedVersion: 3
@@ -7683,7 +7690,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2052214653
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1b4623251ed9d0643ba289d80387993f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
